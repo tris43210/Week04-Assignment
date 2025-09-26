@@ -8,18 +8,36 @@
     <title>client</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav>
+        <a href="">link 1</a>
+        <a href="">link 2</a>
+        <a href="">link 3</a>
+      </nav>
+    </header>
     <main>
       <form id="form">
-        <label for=""></label>
-        <input type="text" />
+        <label for="">Track Name:</label>
+        <input type="text" name="trackName" id="" />
 
-        <label for=""></label>
-        <input type="text" />
+        <label for="">Artist Name:</label>
+        <input type="text" name="artistName" id="" />
+
+        <label for="">BPM (Beats Per Minuite):</label>
+        <input type="number" name="BPM" id="" />
+
+        <label for="">Key:</label>
+        <input type="text" name="key" id="" />
+
+        <label for="">Comments:</label>
+        <input type="text" name="comments" id="" />
 
         <button type="submit">Submit</button>
       </form>
+      <div class="display-container" id="musicResultsContainer"></div>
     </main>
-    <footer></footer>
+    <footer>
+      <p>Find out more:</p>
+    </footer>
   </body>
 </html>
