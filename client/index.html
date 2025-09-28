@@ -5,36 +5,38 @@
     <link rel="stylesheet" href="./src/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/main.js" defer></script>
-    <title>client</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Ripoff Box</title>
   </head>
   <body>
     <header>
       <nav>
-        <a href="">link 1</a>
-        <a href="">link 2</a>
-        <a href="">link 3</a>
-        <img src="./public/Logo v2 no background.png" alt="" />
+        <img src="./public/logo v3 no background cropped.PNG" alt="" />
       </nav>
     </header>
     <main>
-      <form id="form">
-        <label for="">Track Name:</label>
-        <input type="text" name="trackName" id="" />
-
-        <label for="">Artist Name:</label>
-        <input type="text" name="artistName" id="" />
-
-        <label for="">BPM (Beats Per Minuite):</label>
-        <input type="number" name="BPM" id="" />
-
-        <label for="">Key:</label>
-        <input type="text" name="key" id="" />
-
-        <label for="">Comments:</label>
-        <input type="text" name="comments" id="" />
-
-        <button type="submit">Add to Collection:</button>
-      </form>
+      <div>
+        <h1>Add a track:</h1>
+        <form id="form">
+          <label for="">Track Name:</label>
+          <input type="text" name="trackName" id="" />
+          <label for="">Artist Name:</label>
+          <input type="text" name="artistName" id="" />
+          <label for="">BPM (Beats Per Minuite):</label>
+          <input type="number" name="BPM" id="" />
+          <label for="">Key:</label>
+          <input type="text" name="key" id="" />
+          <label for="">Comments:</label>
+          <input type="text" name="comments" id="" />
+          <button type="submit">Add to Collection:</button>
+        </form>
+      </div>
       <div class="display-container" id="musicResultsContainer">
         <div class="header-container">
           <h1>Artist:</h1>
@@ -46,6 +48,11 @@
     </main>
     <footer>
       <p>Find out more:</p>
+      <div>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
     </footer>
   </body>
 </html>

@@ -27,10 +27,18 @@ function generateHTML(gotData) {
   });
 }
 
-getMusic();
+function getFormData() {
+  form.addEventListener(`submit`, async function (event) {
+    event.preventDefault();
 
-// function getFormData() {
-//   addEventListener(`submit`, function () {
-//     event.preventDefault;
-//   });
-// }
+    const data = new FormData(form);
+    console.log(data);
+    const userInput = Object.fromEntries(data);
+    console.log(userInput);
+
+    const postToServer = await fetch(`http://localhost:8080/musicStorage`);
+  });
+}
+
+getFormData();
+getMusic();

@@ -21,6 +21,10 @@ app.get(`/musicStorage`, async function (req, res) {
   res.json(result.rows);
 });
 
+app.post(`/musicStorage`, function (req, res) {
+  res.json({ message: "Your music has been submitted" });
+});
+
 app.listen(8080, function () {
   console.log(`Server running on port: http://localhost:8080`);
 });
