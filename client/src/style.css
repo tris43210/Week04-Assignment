@@ -47,13 +47,21 @@ form {
   padding-left: 20px;
 }
 
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.1fr;
+  font-size: 0.5rem;
+  margin: 10px;
+}
+
 .track-container {
   background-color: rgb(41, 41, 41);
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem;
-  padding-left: 5%;
-  padding-right: 5%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 0.1fr;
+  margin: 10px;
+  font-weight: bold;
 }
 
 footer {
