@@ -22,6 +22,13 @@ app.get(`/musicStorage`, async function (req, res) {
 });
 
 app.post(`/musicStorage`, function (req, res) {
+  const fromForm = req.body;
+  console.log(fromForm);
+
+  // const submission = db.query(
+  //   `INSERT INTO musicStorage (trackName,BPM,"key",comments,artistName)`
+  // );
+
   res.json({ message: "Your music has been submitted" });
 });
 

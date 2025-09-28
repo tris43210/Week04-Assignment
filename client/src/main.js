@@ -36,7 +36,13 @@ function getFormData() {
     const userInput = Object.fromEntries(data);
     console.log(userInput);
 
-    const postToServer = await fetch(`http://localhost:8080/musicStorage`);
+    const postToServer = await fetch(`http://localhost:8080/musicStorage`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userInput),
+    });
   });
 }
 
