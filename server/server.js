@@ -25,9 +25,16 @@ app.post(`/musicStorage`, function (req, res) {
   const fromForm = req.body;
   console.log(fromForm);
 
-  // const submission = db.query(
-  //   `INSERT INTO musicStorage (trackName,BPM,"key",comments,artistName)`
-  // );
+  const submission = db.query(
+    `INSERT INTO musicStorage (trackName,BPM,"key",comments,artistName) VALUES ($1, $2, $3, $4, $5)`,
+    [
+      req.body.trackName,
+      req.body.BPM,
+      req.body.key,
+      req.body.comments,
+      req.body.artistName,
+    ]
+  );
 
   res.json({ message: "Your music has been submitted" });
 });
