@@ -13,9 +13,16 @@ function generateHTML(gotData) {
   gotData.forEach(function (item) {
     const trackContainer = document.createElement(`div`);
     const artistName = document.createElement(`p`);
+    const trackName = document.createElement(`p`);
+    const BPMhtml = document.createElement(`p`);
+    const comment = document.createElement(`p`);
+    trackContainer.setAttribute("class", "track-container");
 
     artistName.innerText = item.artistname;
-    trackContainer.append(artistName);
+    trackName.innerText = item.trackname;
+    BPMhtml.innerText = item.bpm;
+    comment.innerText = item.comments;
+    trackContainer.append(artistName, trackName, BPMhtml, comment);
     musicResultContianer.append(trackContainer);
   });
 }

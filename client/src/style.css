@@ -9,8 +9,55 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.2fr, 1fr, 0.2fr;
+  background-color: black;
+  color: white;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgb(41, 41, 41);
+  /*border: 1px solid white;*/
+}
+
+nav {
+  border: 4px solid red;
+  margin-left: 70%;
+}
+
+nav > img {
+  width: 20%;
+}
+
+nav > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
 }
 
 main {
   grid-row-start: 2;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, 0.5fr);
+  padding-left: 20px;
+}
+
+.track-container {
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+footer {
+  width: 100vw;
+  background-color: rgb(41, 41, 41);
+  padding-bottom: ;
 }
